@@ -1,0 +1,284 @@
+:root {
+  /*=== === === VARIAVEIS CORES DARK === === === */
+  --h: 172;
+  --s: 100%;
+  --l: 37%;
+  --second-h: 243;
+
+  --first-color: hsl(var(--h), var(--s), var(--l));
+  --body-color: hsl(var(--second-h), 17%, 20%);
+  --title-color: hsl(var(--second-h), 0%, 100%);
+  --text-color: hsl(var(--second-h), 0%, 76%);
+
+  /*=== === === ANIMAÇÃO TRANSIÇÃO DARK/LIGHT === === === */
+  --transition-theme: .5s;
+}
+
+/*  === === BASE === ===  */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--body-color);
+  font-family: 'Open Sans', sans-serif;
+  
+  transition: var(--transition-theme);
+}
+
+/*  === === COLOR FONTS === ===  */
+section p {
+  color: var(--text-color);
+  transition: var(--transition-theme);
+}
+
+h1,
+a,
+footer p {
+  color: var(--title-color);
+  transition: var(--transition-theme);
+}
+
+a:hover {
+  color: var(--first-color);
+}
+
+span,
+.line {
+  color: var(--first-color);
+  transition: var(--transition-theme);
+}
+
+/*=== === === TYPOGRAPHY === === === */
+/* == == FONT-FAMILY == == */
+ul,
+h1,
+footer p {
+  font-family: 'JetBrains Mono', sans-serif;
+} 
+
+/* == == FONT-SIZE & LINE-HEIGHT == == */
+h1{
+  font-size: 2.25rem; /*36px*/
+  line-height: 2.5rem; /*40px*/
+}
+
+section p {
+  font-size: 1rem; /*16px*/
+}
+
+a,
+footer p {
+  font-size: 0.875rem; /*14px*/
+}
+
+a:hover {
+  font-size: 1rem; /*16px*/
+}
+
+a,
+section p,
+footer p {
+  line-height: 1.75rem; /*28px*/
+}
+
+/* == == FONT-WEIGHT == == */
+h1,
+section p span,
+section p strong {
+  font-weight: 700;
+}
+
+section p {
+  font-weight: 400;
+}
+
+a,
+footer p {
+  font-weight: 500;
+}
+
+/*  === === === MODO LIGHT === === ===  */
+body.light-theme {
+  /*=== === === VARIABLE LIGHT COLORS === === === */
+  --h: 172;
+  --s: 100%;
+  --l: 24%;
+  --second-h: 243;
+
+  --first-color: hsl(var(--h), var(--s), var(--l));
+  --body-color: hsl(var(--second-h), 0%, 90%);
+  --title-color: hsl(var(--second-h), 8%, 14%);
+  --text-color: hsl(var(--second-h), 17%, 22%);
+}
+
+/*=== === === SVG LOGO MODO LIGHT === === === */
+.light-theme .logo-dark {
+  fill: var(--text-color);
+  transition: var(--transition-theme);
+}
+
+.light-theme .logo-dark-green {
+  fill: var(--first-color);
+  transition: var(--transition-theme);
+}
+
+.light-theme .logo-dark-white {
+  fill: var(--body-color);
+  transition: var(--transition-theme);
+}
+
+/*=== === === SVG PADLOCK MODO LIGHT === === === */
+.light-theme .padlock-dark {
+  fill: var(--text-color);
+  transition: var(--transition-theme);
+}
+
+.light-theme .padlock-dark-green {
+  fill: var(--first-color);
+  transition: var(--transition-theme);
+}
+
+.light-theme .padlock-white {
+  fill: var(--body-color);
+  transition: var(--transition-theme);
+}
+
+
+
+
+/*=== === === SVG LOGO MODO LIGHT === === === */
+.logo-dark {
+  fill: var(--title-color);
+  transition: var(--transition-theme);
+}
+
+.logo-dark-green {
+  fill: var(--first-color);
+  transition: var(--transition-theme);
+}
+
+.logo-dark-white {
+  fill: var(--body-color);
+  transition: var(--transition-theme);
+}
+
+/*=== === === SVG PADLOCK MODO LIGHT === === === */
+.padlock-dark {
+  fill: var(--title-color);
+  transition: var(--transition-theme);
+}
+
+.padlock-dark-green {
+  fill: var(--first-color);
+  transition: var(--transition-theme);
+}
+
+.padlock-white {
+  fill: var(--body-color);
+  transition: var(--transition-theme);
+}
+
+
+
+
+
+
+/*=== === === BUTTON THEME === === === */
+.change-theme {
+  color: var(--text-color);
+  font-size: 1.25rem;
+  
+  display: flex;
+  align-items: center;
+  
+  cursor: pointer;
+  
+  transition: 0.3s;
+}
+
+.change-theme:hover {
+  color: var(--first-color);
+}
+
+
+/*  === === PAGE === ===  */
+.page {
+  width: 1280px;
+
+  margin: 0 auto;
+  padding-top: 71px;
+}
+
+/*  === === HEADER === ===  */
+nav {
+  width: 1080px;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0 auto 100px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+  gap: 64px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*  === === MAIN === ===  */
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto 157px;
+  gap: 80px;
+}
+
+/*  === === SECTION === ===  */
+section p {
+  text-align: center;
+  margin-top: 59px;
+}
+
+section p + p {
+  margin-top: 28px;
+}
+
+
+/*  === === FOOTER === ===  */
+footer {
+  text-align: center;
+}
+
+.line {
+  width: 568px;
+  height: 0;
+
+  margin: 0 auto;
+  border: 1px solid var(--first-color);
+}
+
+.line p {
+  margin-top: 27px;
+}
+
+
+/*  === === SVG PADLOCK === ===  */
+#padlock {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
+
